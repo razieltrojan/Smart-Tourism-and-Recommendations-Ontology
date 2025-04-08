@@ -1,0 +1,1767 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations/"
+     xml:base="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:Smart-Tourism-and-Recommendations="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations">
+        <dc:creator xml:lang="en">David Guirado de la Cámara</dc:creator>
+        <dc:title xml:lang="en">Smart Tourist And Recommendations Ontology</dc:title>
+        <rdfs:comment xml:lang="en">Smart Tourist and Recommendations Ontology for PEC_2</rdfs:comment>
+        <rdfs:label xml:lang="en">Smart-Tourist-And-Recommendations-Ontology</rdfs:label>
+        <owl:versionInfo xml:lang="en">v.1.0_2025</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasAttractionType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasAttractionType">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isAttractionTypeOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Attraction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeAttraction"/>
+        <rdfs:comment xml:lang="en">Attraction type</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAttractionType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasCityOffer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasCityOffer">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isInCity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Offers"/>
+        <rdfs:comment xml:lang="en">inverse of isInCity</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCityOffer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasEventType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasEventType">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isEventTypeOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeEvent"/>
+        <rdfs:comment xml:lang="en">Type of event</rdfs:comment>
+        <rdfs:label xml:lang="en">hasEventType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasHotelType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasHotelType">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isHotelTypeOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Hotel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeHotel"/>
+        <rdfs:comment xml:lang="en">Type of hotel</rdfs:comment>
+        <rdfs:label xml:lang="en">hasHotelType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasLocationCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasLocationCity">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isLocationOfCity"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Location"/>
+        <rdfs:comment xml:lang="en">Location of city</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCityLocation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasTypeRestaurant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasTypeRestaurant">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isRestaurantTypeOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeRestaurant"/>
+        <rdfs:comment xml:lang="en">Type of restaurant</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRestaurantType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasTypeTransport -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasTypeTransport">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isTransportTypeOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Transport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeTransport"/>
+        <rdfs:comment xml:lang="en">Type of transport</rdfs:comment>
+        <rdfs:label xml:lang="en">hasTransportType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isAttractionTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isAttractionTypeOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeAttraction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Attraction"/>
+        <rdfs:comment xml:lang="en">inverse of hasAttractionType</rdfs:comment>
+        <rdfs:label xml:lang="en">isAttractionTypeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isEventTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isEventTypeOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeEvent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Event"/>
+        <rdfs:comment xml:lang="en">inverse of HasEventType</rdfs:comment>
+        <rdfs:label xml:lang="en">isEventTypeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isHotelTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isHotelTypeOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeHotel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Hotel"/>
+        <rdfs:comment xml:lang="en">inverse of hasHotelType</rdfs:comment>
+        <rdfs:label xml:lang="en">isHotelTypeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isInCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isInCity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Offers"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#City"/>
+        <rdfs:comment xml:lang="en">Offer is in city</rdfs:comment>
+        <rdfs:label xml:lang="en">isInCity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isLocationOfCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isLocationOfCity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#City"/>
+        <rdfs:comment xml:lang="en">inverse of hasCityLocation</rdfs:comment>
+        <rdfs:label xml:lang="en">isLocationOfCity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isRestaurantTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isRestaurantTypeOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeRestaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Restaurant"/>
+        <rdfs:comment xml:lang="en">inverse of hasRestaurantType</rdfs:comment>
+        <rdfs:label xml:lang="en">isRestaurantTypeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isTransportTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isTransportTypeOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeTransport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Transport"/>
+        <rdfs:comment xml:lang="en">inverse of hasTransportType</rdfs:comment>
+        <rdfs:label xml:lang="en">isTransportTypeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Longitude_value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Longitude_value">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Longitude value of Location</rdfs:comment>
+        <rdfs:label xml:lang="en">hasLongitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasAttractionScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasAttractionScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Attraction"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minExclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</xsd:maxExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Attraction score</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAttractionScore</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasAveragePriceRestaurant -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasAveragePriceRestaurant">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Restaurant average price</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRestaurantAvPrice</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasAveragePriceTransport -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasAveragePriceTransport">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Transport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Transport average price</rdfs:comment>
+        <rdfs:label xml:lang="en">hasTransportAvPrice</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasCompanyTransport -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasCompanyTransport">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Transport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Transport company</rdfs:comment>
+        <rdfs:label xml:lang="en">hasTransportCompany</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasDateEvent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasDateEvent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Event date</rdfs:comment>
+        <rdfs:label xml:lang="en">hasEventDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasIdAttraction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasIdAttraction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Attraction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Attraction Id</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAttractionId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasIdCity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasIdCity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">City Id</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCityId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasIdEvent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasIdEvent">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Event Id</rdfs:comment>
+        <rdfs:label xml:lang="en">hasEventId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasIdHotel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasIdHotel">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Hotel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Hotel Id</rdfs:comment>
+        <rdfs:label xml:lang="en">hasHotelId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasIdRestaurant -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasIdRestaurant">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Restaurant Id</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRestaurantId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasIdTransport -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasIdTransport">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeAttraction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Transport Id</rdfs:comment>
+        <rdfs:label xml:lang="en">hasTransportId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasLatitudeValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasLatitudeValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Latitude value of Location</rdfs:comment>
+        <rdfs:label xml:lang="en">hasLatitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasNameCity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasNameCity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">City name</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCityName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasNameOffer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasNameOffer">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Offers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Name of the tourist offer</rdfs:comment>
+        <rdfs:label xml:lang="en">hasOfferName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasPriceHotel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasPriceHotel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Hotel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Price per night</rdfs:comment>
+        <rdfs:label xml:lang="en">hasHotelPrice</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasScoreHotel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasScoreHotel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Hotel"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minExclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</xsd:maxExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Hotel score</rdfs:comment>
+        <rdfs:label xml:lang="en">hasHotelScore</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasScoreRestaurant -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasScoreRestaurant">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Restaurant"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minExclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</xsd:maxExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Restaurant score</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRestaurantScore</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasStarsHotel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasStarsHotel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Hotel"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</xsd:minExclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</xsd:maxExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Hotel stars</rdfs:comment>
+        <rdfs:label xml:lang="en">hasHotelStars</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Andalusian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Andalusian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeRestaurant"/>
+        <rdfs:comment xml:lang="en">Andalusian cuisine</rdfs:comment>
+        <rdfs:label xml:lang="en">Andalusian</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Attraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Attraction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Offers"/>
+        <rdfs:comment xml:lang="en">Tourist Attractions offerings</rdfs:comment>
+        <rdfs:label xml:lang="en">TouristAttraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Beach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Beach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeAttraction"/>
+        <rdfs:comment xml:lang="en">Beach attractions</rdfs:comment>
+        <rdfs:label xml:lang="en">BeachAttraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#BeachHotel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#BeachHotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeHotel"/>
+        <rdfs:comment xml:lang="en">Beach hotels</rdfs:comment>
+        <rdfs:label xml:lang="en">BeachHotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeTransport"/>
+        <rdfs:comment xml:lang="en">By bus</rdfs:comment>
+        <rdfs:label xml:lang="en">Bus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Business -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Business">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeHotel"/>
+        <rdfs:comment xml:lang="en">Business hotels</rdfs:comment>
+        <rdfs:label xml:lang="en">BusinessHotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#City">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">city ​​of tourist offers</rdfs:comment>
+        <rdfs:label xml:lang="en">City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Cultural -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Cultural">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeAttraction"/>
+        <rdfs:comment xml:lang="en">Cultural attractions</rdfs:comment>
+        <rdfs:label xml:lang="en">CulturalAttraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#CulturalEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#CulturalEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeEvent"/>
+        <rdfs:comment xml:lang="en">Cultural events</rdfs:comment>
+        <rdfs:label xml:lang="en">CulturalEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Offers"/>
+        <rdfs:comment xml:lang="en">Events that occurred</rdfs:comment>
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Gastronomic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Gastronomic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeEvent"/>
+        <rdfs:comment xml:lang="en">Gastronomic events</rdfs:comment>
+        <rdfs:label xml:lang="en">GastronomicEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#GreenCity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#GreenCity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">Cities that care for the environment</rdfs:comment>
+        <rdfs:label xml:lang="en">CityGreen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Hotel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Hotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Offers"/>
+        <rdfs:comment xml:lang="en">Hotel offerings</rdfs:comment>
+        <rdfs:label xml:lang="en">Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Italian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Italian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeRestaurant"/>
+        <rdfs:comment xml:lang="en">Italian cuisine</rdfs:comment>
+        <rdfs:label xml:lang="en">Italian</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Japanese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Japanese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeRestaurant"/>
+        <rdfs:comment xml:lang="en">Japanese cuisine</rdfs:comment>
+        <rdfs:label xml:lang="en">Japanese</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Location">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">Location of cities</rdfs:comment>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Luxury -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Luxury">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeHotel"/>
+        <rdfs:comment xml:lang="en">Luxury hotels</rdfs:comment>
+        <rdfs:label xml:lang="en">LuxuryHotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Mediterranean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Mediterranean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeRestaurant"/>
+        <rdfs:comment xml:lang="en">Mediterranean cuisine</rdfs:comment>
+        <rdfs:label xml:lang="en">Mediterranean</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Mexican -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Mexican">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeRestaurant"/>
+        <rdfs:comment xml:lang="en">Mexican cuisise</rdfs:comment>
+        <rdfs:label xml:lang="en">Mexican</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Momument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Momument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeAttraction"/>
+        <rdfs:comment xml:lang="en">Monument attractions</rdfs:comment>
+        <rdfs:label xml:lang="en">MonumentAttraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Museum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Museum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeAttraction"/>
+        <rdfs:comment xml:lang="en">Museum attractions</rdfs:comment>
+        <rdfs:label xml:lang="en">MuseumAttraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Musical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Musical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeEvent"/>
+        <rdfs:comment xml:lang="en">Musical events</rdfs:comment>
+        <rdfs:label xml:lang="en">MusicalEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Offers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Offers">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">Tourism offers</rdfs:comment>
+        <rdfs:label xml:lang="en">Offer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Park -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Park">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeAttraction"/>
+        <rdfs:comment xml:lang="en">Park attractions</rdfs:comment>
+        <rdfs:label xml:lang="en">ParkAttraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#RecommendedCity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#RecommendedCity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">Cities that have bicycles, offer musical events, and have highly rated restaurants</rdfs:comment>
+        <rdfs:label xml:lang="en">CityRecommended</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#RecommendedHotel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#RecommendedHotel">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">Luxury hotels costing less than 200</rdfs:comment>
+        <rdfs:label xml:lang="en">HotelRecommended</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Restaurant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Restaurant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Offers"/>
+        <rdfs:comment xml:lang="en">Restaurant offerings</rdfs:comment>
+        <rdfs:label xml:lang="en">Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Rural -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Rural">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeHotel"/>
+        <rdfs:comment xml:lang="en">Rural hotels</rdfs:comment>
+        <rdfs:label xml:lang="en">RuralHotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Sporting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Sporting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeEvent"/>
+        <rdfs:comment xml:lang="en">Sporting events</rdfs:comment>
+        <rdfs:label xml:lang="en">SportingEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Streetcar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Streetcar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeTransport"/>
+        <rdfs:comment xml:lang="en">By streetcar</rdfs:comment>
+        <rdfs:label xml:lang="en">Streetcar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Subway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Subway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeTransport"/>
+        <rdfs:comment xml:lang="en">By subway</rdfs:comment>
+        <rdfs:label xml:lang="en">Subway</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Taxi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Taxi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeTransport"/>
+        <rdfs:comment xml:lang="en">By taxi</rdfs:comment>
+        <rdfs:label xml:lang="en">Taxi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Technological -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Technological">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeEvent"/>
+        <rdfs:comment xml:lang="en">Technological events</rdfs:comment>
+        <rdfs:label xml:lang="en">TechnologicalEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Tourist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Tourist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeHotel"/>
+        <rdfs:comment xml:lang="en">Tourist hotels</rdfs:comment>
+        <rdfs:label xml:lang="en">TouristHotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Offers"/>
+        <rdfs:comment xml:lang="en">Types of transport offering</rdfs:comment>
+        <rdfs:label xml:lang="en">Transport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeAttraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeAttraction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Attraction"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Beach"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Cultural"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Momument"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Museum"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Park"/>
+        </owl:disjointUnionOf>
+        <rdfs:comment xml:lang="en">Types of attractions</rdfs:comment>
+        <rdfs:label xml:lang="en">AttractionType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Event"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#CulturalEvent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Gastronomic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Musical"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Sporting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Technological"/>
+        </owl:disjointUnionOf>
+        <rdfs:comment xml:lang="en">Types of events that occurred</rdfs:comment>
+        <rdfs:label xml:lang="en">EventType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeHotel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeHotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Hotel"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#BeachHotel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Business"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Luxury"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Rural"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Tourist"/>
+        </owl:disjointUnionOf>
+        <rdfs:comment xml:lang="en">Type of hotels</rdfs:comment>
+        <rdfs:label xml:lang="en">HotelType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeRestaurant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeRestaurant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Restaurant"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Andalusian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Italian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Japanese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Mediterranean"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Mexican"/>
+        </owl:disjointUnionOf>
+        <rdfs:comment xml:lang="en">Types of restaurants</rdfs:comment>
+        <rdfs:label xml:lang="en">RestaurantType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeTransport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeTransport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Transport"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Bus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Streetcar"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Subway"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Taxi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#bicycle"/>
+        </owl:disjointUnionOf>
+        <rdfs:comment xml:lang="en">Types of transport</rdfs:comment>
+        <rdfs:label xml:lang="en">TransportType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#bicycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#bicycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TypeTransport"/>
+        <rdfs:comment xml:lang="en">By biclycle</rdfs:comment>
+        <rdfs:label xml:lang="en">Bicycle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:comment xml:lang="en">Smart tourist and Recommendations ontology</rdfs:comment>
+        <rdfs:label xml:lang="en">Ontology</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#AndalusianRestaurant3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#AndalusianRestaurant3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Andalusian"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Valencia"/>
+        <Smart-Tourism-and-Recommendations:hasAveragePriceRestaurant rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</Smart-Tourism-and-Recommendations:hasAveragePriceRestaurant>
+        <Smart-Tourism-and-Recommendations:hasIdRestaurant rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Smart-Tourism-and-Recommendations:hasIdRestaurant>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Restaurante Fusión Valencia</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <Smart-Tourism-and-Recommendations:hasScoreRestaurant rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.2</Smart-Tourism-and-Recommendations:hasScoreRestaurant>
+        <rdfs:comment xml:lang="en">Fusión Valencia Restaurant</rdfs:comment>
+        <rdfs:label xml:lang="en">RestaurantAndalusian3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Barcelona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Barcelona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#City"/>
+        <Smart-Tourism-and-Recommendations:hasLocationCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#LocBarcelona"/>
+        <Smart-Tourism-and-Recommendations:hasIdCity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Smart-Tourism-and-Recommendations:hasIdCity>
+        <Smart-Tourism-and-Recommendations:hasNameCity>Barcelona</Smart-Tourism-and-Recommendations:hasNameCity>
+        <rdfs:comment xml:lang="en">Barcelona City instance</rdfs:comment>
+        <rdfs:label xml:lang="en">BarcelonaCity</rdfs:label>
+        <rdfs:sameAs rdf:resource="http://dbpedia.org/resource/Barcelona"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#BeachAttraction20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#BeachAttraction20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Beach"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Barcelona"/>
+        <Smart-Tourism-and-Recommendations:hasAttractionScore rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.7</Smart-Tourism-and-Recommendations:hasAttractionScore>
+        <Smart-Tourism-and-Recommendations:hasIdAttraction rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</Smart-Tourism-and-Recommendations:hasIdAttraction>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Catedral Barcelona</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <rdfs:comment xml:lang="en">Beach Attraction in Barcelona</rdfs:comment>
+        <rdfs:label xml:lang="en">BeachAttraction20</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#BeachHotel9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#BeachHotel9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#BeachHotel"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Barcelona"/>
+        <Smart-Tourism-and-Recommendations:hasIdHotel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</Smart-Tourism-and-Recommendations:hasIdHotel>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Hotel Royal Barcelona</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <Smart-Tourism-and-Recommendations:hasPriceHotel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">278</Smart-Tourism-and-Recommendations:hasPriceHotel>
+        <Smart-Tourism-and-Recommendations:hasScoreHotel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</Smart-Tourism-and-Recommendations:hasScoreHotel>
+        <Smart-Tourism-and-Recommendations:hasStarsHotel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</Smart-Tourism-and-Recommendations:hasStarsHotel>
+        <rdfs:comment xml:lang="en">Royal Barcelona Hotel</rdfs:comment>
+        <rdfs:label xml:lang="en">HotelBeach9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Bicycle8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Bicycle8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#bicycle"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Madrid"/>
+        <Smart-Tourism-and-Recommendations:hasAveragePriceTransport rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.32</Smart-Tourism-and-Recommendations:hasAveragePriceTransport>
+        <Smart-Tourism-and-Recommendations:hasCompanyTransport>City Madrid</Smart-Tourism-and-Recommendations:hasCompanyTransport>
+        <Smart-Tourism-and-Recommendations:hasIdTransport rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</Smart-Tourism-and-Recommendations:hasIdTransport>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Bicicleta Pública</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <rdfs:comment xml:lang="en">Public Biclycle in Madrid</rdfs:comment>
+        <rdfs:label xml:lang="en">PublicBiclycle8</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Bus9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Bus9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Bus"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Barcelona"/>
+        <Smart-Tourism-and-Recommendations:hasAveragePriceTransport rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.72</Smart-Tourism-and-Recommendations:hasAveragePriceTransport>
+        <Smart-Tourism-and-Recommendations:hasCompanyTransport>Metro Barcelona</Smart-Tourism-and-Recommendations:hasCompanyTransport>
+        <Smart-Tourism-and-Recommendations:hasIdTransport rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</Smart-Tourism-and-Recommendations:hasIdTransport>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Autobús</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <rdfs:comment xml:lang="en">Bus in Barcelona</rdfs:comment>
+        <rdfs:label xml:lang="en">Bus9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#CulturalEvent14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#CulturalEvent14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#CulturalEvent"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Toledo"/>
+        <Smart-Tourism-and-Recommendations:hasDateEvent>2024-12-14</Smart-Tourism-and-Recommendations:hasDateEvent>
+        <Smart-Tourism-and-Recommendations:hasIdEvent rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</Smart-Tourism-and-Recommendations:hasIdEvent>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Congreso Toledo</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <rdfs:comment xml:lang="en">Congreso Toledo Event</rdfs:comment>
+        <rdfs:label xml:lang="en">EventCultural14</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#GastronomicEvent10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#GastronomicEvent10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Gastronomic"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Barcelona"/>
+        <Smart-Tourism-and-Recommendations:hasDateEvent>2024-06-28</Smart-Tourism-and-Recommendations:hasDateEvent>
+        <Smart-Tourism-and-Recommendations:hasIdEvent rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</Smart-Tourism-and-Recommendations:hasIdEvent>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Congreso Barcelona</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <rdfs:comment xml:lang="en">Congreso Barcelona Event</rdfs:comment>
+        <rdfs:label xml:lang="en">EventGastronomic10</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#ItalianRestaurant100 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#ItalianRestaurant100">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Italian"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Toledo"/>
+        <Smart-Tourism-and-Recommendations:hasAveragePriceRestaurant rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</Smart-Tourism-and-Recommendations:hasAveragePriceRestaurant>
+        <Smart-Tourism-and-Recommendations:hasIdRestaurant rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</Smart-Tourism-and-Recommendations:hasIdRestaurant>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Restaurante Gourmet Toledo</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <Smart-Tourism-and-Recommendations:hasScoreRestaurant rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.2</Smart-Tourism-and-Recommendations:hasScoreRestaurant>
+        <rdfs:comment>Gourmet Toledo Restaurant</rdfs:comment>
+        <rdfs:label xml:lang="en">RestaurantItalian100</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#JapaneseRestaurant2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#JapaneseRestaurant2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Japanese"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Madrid"/>
+        <Smart-Tourism-and-Recommendations:hasAveragePriceRestaurant rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</Smart-Tourism-and-Recommendations:hasAveragePriceRestaurant>
+        <Smart-Tourism-and-Recommendations:hasIdRestaurant rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</Smart-Tourism-and-Recommendations:hasIdRestaurant>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Restaurante Gourmet Madrid</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <Smart-Tourism-and-Recommendations:hasScoreRestaurant rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</Smart-Tourism-and-Recommendations:hasScoreRestaurant>
+        <rdfs:comment xml:lang="en">Gourmet Madrid Restaurant</rdfs:comment>
+        <rdfs:label xml:lang="en">RestaurantJapanese2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#LocBarcelona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#LocBarcelona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Location"/>
+        <Smart-Tourism-and-Recommendations:Longitude_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-2.1686</Smart-Tourism-and-Recommendations:Longitude_value>
+        <Smart-Tourism-and-Recommendations:hasLatitudeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">41.3874</Smart-Tourism-and-Recommendations:hasLatitudeValue>
+        <rdfs:comment xml:lang="en">LocationBarcelona</rdfs:comment>
+        <rdfs:label xml:lang="en">LocationBarcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#LocMadrid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#LocMadrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Location"/>
+        <Smart-Tourism-and-Recommendations:Longitude_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-3.7038</Smart-Tourism-and-Recommendations:Longitude_value>
+        <Smart-Tourism-and-Recommendations:hasLatitudeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">40.4168</Smart-Tourism-and-Recommendations:hasLatitudeValue>
+        <rdfs:comment xml:lang="en">Location of Madrid</rdfs:comment>
+        <rdfs:label xml:lang="en">LocationMadrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#LocToledo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#LocToledo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Location"/>
+        <Smart-Tourism-and-Recommendations:Longitude_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-4.0273</Smart-Tourism-and-Recommendations:Longitude_value>
+        <Smart-Tourism-and-Recommendations:hasLatitudeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">39.8628</Smart-Tourism-and-Recommendations:hasLatitudeValue>
+        <rdfs:comment xml:lang="en">Location of Toledo</rdfs:comment>
+        <rdfs:label xml:lang="en">LocationToledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#LocValencia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#LocValencia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Location"/>
+        <Smart-Tourism-and-Recommendations:Longitude_value rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-0.3763</Smart-Tourism-and-Recommendations:Longitude_value>
+        <Smart-Tourism-and-Recommendations:hasLatitudeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">39.4699</Smart-Tourism-and-Recommendations:hasLatitudeValue>
+        <rdfs:comment xml:lang="en">Location of Valencia</rdfs:comment>
+        <rdfs:label xml:lang="en">LocationValencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#LuxuryHotel21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#LuxuryHotel21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Luxury"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Valencia"/>
+        <Smart-Tourism-and-Recommendations:hasIdHotel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</Smart-Tourism-and-Recommendations:hasIdHotel>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Hotel Sol Valencia</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <Smart-Tourism-and-Recommendations:hasPriceHotel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">199</Smart-Tourism-and-Recommendations:hasPriceHotel>
+        <Smart-Tourism-and-Recommendations:hasScoreHotel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</Smart-Tourism-and-Recommendations:hasScoreHotel>
+        <Smart-Tourism-and-Recommendations:hasStarsHotel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</Smart-Tourism-and-Recommendations:hasStarsHotel>
+        <rdfs:comment xml:lang="en">Sol Valencia Hotel</rdfs:comment>
+        <rdfs:label xml:lang="en">HotelLuxury21</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Madrid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Madrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#City"/>
+        <Smart-Tourism-and-Recommendations:hasLocationCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#LocMadrid"/>
+        <Smart-Tourism-and-Recommendations:hasIdCity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Smart-Tourism-and-Recommendations:hasIdCity>
+        <Smart-Tourism-and-Recommendations:hasNameCity>Madrid</Smart-Tourism-and-Recommendations:hasNameCity>
+        <rdfs:comment xml:lang="en">Madrid City instance</rdfs:comment>
+        <rdfs:label xml:lang="en">MadridCity</rdfs:label>
+        <rdfs:sameAs rdf:resource="http://dbpedia.org/resource/Madrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#MediterraneanRestaurant11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#MediterraneanRestaurant11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Mediterranean"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Madrid"/>
+        <Smart-Tourism-and-Recommendations:hasAveragePriceRestaurant rdf:datatype="http://www.w3.org/2001/XMLSchema#int">49</Smart-Tourism-and-Recommendations:hasAveragePriceRestaurant>
+        <Smart-Tourism-and-Recommendations:hasIdRestaurant rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</Smart-Tourism-and-Recommendations:hasIdRestaurant>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Restaurante Gourmet Madrid</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <Smart-Tourism-and-Recommendations:hasScoreRestaurant rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.5</Smart-Tourism-and-Recommendations:hasScoreRestaurant>
+        <rdfs:comment xml:lang="en">Gourmet Madrid Restaurant</rdfs:comment>
+        <rdfs:label xml:lang="en">RestaurantMediterranean11</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#MexicanRestaurant1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#MexicanRestaurant1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Mexican"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Toledo"/>
+        <Smart-Tourism-and-Recommendations:hasAveragePriceRestaurant rdf:datatype="http://www.w3.org/2001/XMLSchema#int">46</Smart-Tourism-and-Recommendations:hasAveragePriceRestaurant>
+        <Smart-Tourism-and-Recommendations:hasIdRestaurant rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</Smart-Tourism-and-Recommendations:hasIdRestaurant>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Restaurante Tradición Toledo</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <Smart-Tourism-and-Recommendations:hasScoreRestaurant rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.7</Smart-Tourism-and-Recommendations:hasScoreRestaurant>
+        <rdfs:comment xml:lang="en">Tradición Toledo Restaurant</rdfs:comment>
+        <rdfs:label xml:lang="en">RestaurantMexican1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#MonumentAttraction11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#MonumentAttraction11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Momument"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Toledo"/>
+        <Smart-Tourism-and-Recommendations:hasAttractionScore rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</Smart-Tourism-and-Recommendations:hasAttractionScore>
+        <Smart-Tourism-and-Recommendations:hasIdAttraction rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</Smart-Tourism-and-Recommendations:hasIdAttraction>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Castillo Toledo</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <rdfs:comment xml:lang="en">Monument Attraction in Toledo</rdfs:comment>
+        <rdfs:label xml:lang="en">MonumentAttraction11</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#MuseumAttraction53 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#MuseumAttraction53">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Museum"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Valencia"/>
+        <Smart-Tourism-and-Recommendations:hasAttractionScore rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.3</Smart-Tourism-and-Recommendations:hasAttractionScore>
+        <Smart-Tourism-and-Recommendations:hasIdAttraction rdf:datatype="http://www.w3.org/2001/XMLSchema#int">53</Smart-Tourism-and-Recommendations:hasIdAttraction>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Catedral Valencia</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <rdfs:comment xml:lang="en">Museum Attraction in Valencia</rdfs:comment>
+        <rdfs:label xml:lang="en">MuseumAttraction53</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#MusicalEvent30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#MusicalEvent30">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Musical"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Madrid"/>
+        <Smart-Tourism-and-Recommendations:hasDateEvent>2024-09-14</Smart-Tourism-and-Recommendations:hasDateEvent>
+        <Smart-Tourism-and-Recommendations:hasIdEvent rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</Smart-Tourism-and-Recommendations:hasIdEvent>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Festival Madrid</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <rdfs:comment xml:lang="en">Festival Madrid Event</rdfs:comment>
+        <rdfs:label xml:lang="en">EventMusical30</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#RuralHotel32 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#RuralHotel32">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Rural"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Toledo"/>
+        <Smart-Tourism-and-Recommendations:hasIdHotel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">32</Smart-Tourism-and-Recommendations:hasIdHotel>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Hotel Palace Toledo</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <Smart-Tourism-and-Recommendations:hasPriceHotel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">74</Smart-Tourism-and-Recommendations:hasPriceHotel>
+        <Smart-Tourism-and-Recommendations:hasScoreHotel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.8</Smart-Tourism-and-Recommendations:hasScoreHotel>
+        <Smart-Tourism-and-Recommendations:hasStarsHotel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</Smart-Tourism-and-Recommendations:hasStarsHotel>
+        <rdfs:comment xml:lang="en">Palace Toledo Hotel</rdfs:comment>
+        <rdfs:label xml:lang="en">HotelRural32</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#StreetCar3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#StreetCar3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Streetcar"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Toledo"/>
+        <Smart-Tourism-and-Recommendations:hasAveragePriceTransport rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.61</Smart-Tourism-and-Recommendations:hasAveragePriceTransport>
+        <Smart-Tourism-and-Recommendations:hasCompanyTransport>Trans Toledo</Smart-Tourism-and-Recommendations:hasCompanyTransport>
+        <Smart-Tourism-and-Recommendations:hasIdTransport rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Smart-Tourism-and-Recommendations:hasIdTransport>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Tranvía</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <rdfs:comment xml:lang="en">StreetCar in Toledo</rdfs:comment>
+        <rdfs:label xml:lang="en">StreetCar3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Subway1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Subway1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Subway"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Madrid"/>
+        <Smart-Tourism-and-Recommendations:hasAveragePriceTransport rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.85</Smart-Tourism-and-Recommendations:hasAveragePriceTransport>
+        <Smart-Tourism-and-Recommendations:hasCompanyTransport>Urban Madrid</Smart-Tourism-and-Recommendations:hasCompanyTransport>
+        <Smart-Tourism-and-Recommendations:hasIdTransport rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</Smart-Tourism-and-Recommendations:hasIdTransport>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Metro</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <rdfs:comment xml:lang="en">Subway in Madrid</rdfs:comment>
+        <rdfs:label xml:lang="en">Subway1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Taxi56 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Taxi56">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Taxi"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Valencia"/>
+        <Smart-Tourism-and-Recommendations:hasAveragePriceTransport rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.46</Smart-Tourism-and-Recommendations:hasAveragePriceTransport>
+        <Smart-Tourism-and-Recommendations:hasCompanyTransport>Trans Valencia</Smart-Tourism-and-Recommendations:hasCompanyTransport>
+        <Smart-Tourism-and-Recommendations:hasIdTransport rdf:datatype="http://www.w3.org/2001/XMLSchema#int">56</Smart-Tourism-and-Recommendations:hasIdTransport>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Taxi</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <rdfs:comment xml:lang="en">Taxi in Valencia</rdfs:comment>
+        <rdfs:label xml:lang="en">Taxi56</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TechnologicalEvent13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TechnologicalEvent13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Technological"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Valencia"/>
+        <Smart-Tourism-and-Recommendations:hasDateEvent>2024-08-13</Smart-Tourism-and-Recommendations:hasDateEvent>
+        <Smart-Tourism-and-Recommendations:hasIdEvent rdf:datatype="http://www.w3.org/2001/XMLSchema#int">13</Smart-Tourism-and-Recommendations:hasIdEvent>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Congreso Valencia</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <rdfs:comment xml:lang="en">Congreso Valencia Event</rdfs:comment>
+        <rdfs:label xml:lang="en">EventTechnological13</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Toledo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Toledo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#City"/>
+        <Smart-Tourism-and-Recommendations:hasLocationCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#LocToledo"/>
+        <Smart-Tourism-and-Recommendations:hasIdCity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</Smart-Tourism-and-Recommendations:hasIdCity>
+        <Smart-Tourism-and-Recommendations:hasNameCity>Toledo</Smart-Tourism-and-Recommendations:hasNameCity>
+        <rdfs:comment xml:lang="en">Toledo City instance</rdfs:comment>
+        <rdfs:label xml:lang="en">ToledoCity</rdfs:label>
+        <rdfs:sameAs rdf:resource="https://dbpedia.org/page/Toledo,_Spain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TouristHotel20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#TouristHotel20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Tourist"/>
+        <Smart-Tourism-and-Recommendations:isInCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Valencia"/>
+        <Smart-Tourism-and-Recommendations:hasIdHotel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</Smart-Tourism-and-Recommendations:hasIdHotel>
+        <Smart-Tourism-and-Recommendations:hasNameOffer>Hotel Vista Valencia</Smart-Tourism-and-Recommendations:hasNameOffer>
+        <Smart-Tourism-and-Recommendations:hasPriceHotel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">149</Smart-Tourism-and-Recommendations:hasPriceHotel>
+        <Smart-Tourism-and-Recommendations:hasScoreHotel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</Smart-Tourism-and-Recommendations:hasScoreHotel>
+        <Smart-Tourism-and-Recommendations:hasStarsHotel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</Smart-Tourism-and-Recommendations:hasStarsHotel>
+        <rdfs:comment xml:lang="en">Vista Valencia Hotel</rdfs:comment>
+        <rdfs:label xml:lang="en">HotelTourist20</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Valencia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Valencia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#City"/>
+        <Smart-Tourism-and-Recommendations:hasLocationCity rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#LocValencia"/>
+        <Smart-Tourism-and-Recommendations:hasIdCity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</Smart-Tourism-and-Recommendations:hasIdCity>
+        <Smart-Tourism-and-Recommendations:hasNameCity>Valencia</Smart-Tourism-and-Recommendations:hasNameCity>
+        <rdfs:comment xml:lang="en">Valencia City instance</rdfs:comment>
+        <rdfs:label xml:lang="en">ValenciaCity</rdfs:label>
+        <rdfs:sameAs rdf:resource="http://dbpedia.org/resource/Valencia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Andalusian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Italian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Japanese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Mediterranean"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Mexican"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Beach"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Cultural"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Momument"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Museum"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Park"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#BeachHotel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Business"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Luxury"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Rural"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Tourist"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Bus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Streetcar"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Subway"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Taxi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#bicycle"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#CulturalEvent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Gastronomic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Musical"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Sporting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Technological"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Barcelona"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Madrid"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Toledo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Valencia"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#LocBarcelona"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#LocMadrid"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#LocToledo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#LocValencia"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#X">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#P">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#E">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#C">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#B">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#R">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#S">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#bicycle"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#B"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isInCity"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#B"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#C"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#GreenCity"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#C"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Luxury"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasPriceHotel"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#P"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#P"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#RecommendedHotel"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Musical"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#E"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isInCity"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#E"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#C"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#bicycle"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#B"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isInCity"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#B"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#C"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#Restaurant"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#R"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#isInCity"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl:var#R"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl:var#C"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#hasScoreRestaurant"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl:var#R"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl:var#S"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                                                <swrl:arguments>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first rdf:resource="urn:swrl:var#S"/>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rdf:first>
+                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </swrl:arguments>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dgc/ontologies/2025/2/Smart-Tourism-and-Recommendations#RecommendedCity"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#C"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
